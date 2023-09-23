@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="sortcut icon" tyle="image/83301.png" href="alarm-clock-512.png">
+    <title>my Clock Project</title>
+</head>
+
+<body>
+
+    <audio id="myAudio" src="alarm.mp3" type="audio/mpeg"></audio>
+    <canvas id="canvas"></canvas>
+    <div class="upmain" id="upmain">
+        <div class="hid" id="hid"></div>
+        <div class="main">
+
+            <div class="section1">
+                <div class="time" id="time">
+                    <div id="hours">11 :<br><span>Hours</span></div>
+                    <div id="minutes">07 :<br><span>Minutes</span></div>
+                    <div id="seconds">25<br><span>seconds</span></div>
+                </div>
+
+                <div class="ap">
+                    <div id="ampm">AM</div>
+                </div>
+            </div>
+            <div class="section2">
+                <div class="rbt">
+                    <h3>Set a reminder alarm</h3>
+                </div>
+                <div class="rbt1">
+                    <p>You can set a reminder alarm from here : </p>
+                    <ul class="set" id="set">
+
+                        <div class="hid hi" id="hid3"></div>
+
+                        <li class="slid sli" id="empty"><span class="sec1">
+                                <p>The record is empty</p>
+                        </li>
+
+
+                    </ul>
+                    <div class="plu">
+                        <div class="pluse" id="pluse">
+                            <i class="fa-solid fa-plus"></i>
+
+                        </div>
+                        <button type="button" id="clear" class="clear">clear</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="dapap" id="dapap">
+        <div class="upMessage">
+            <div class="hid" id="hid1"></div>
+            <div class="message" id="message">
+                <i class="fa-solid fa-circle-xmark" id="close"></i>
+                <h2 id="titleMessage">Create your alarm now</h2>
+                <div class="upNume">
+                    <label for="name" class="lableName">Enter the name of the alarm : </label>
+                    <input type="text" name="" id="name">
+
+
+                </div>
+
+                <div class="upSet">
+                    <label for="name" class="lableName lab">Set an alarm : </label>
+                    <div class="alam">
+
+                        <div class="upin">
+                            <label for="hours">H : </label>
+                            <select class="sel" id="sel"></select>
+                        </div>
+                        <div class="upin">
+                            <label for="hours">M : </label>
+                            <select class="sel" id="sel1"></select>
+                        </div>
+                        <div class="upin">
+                            <label for="hours">P : </label>
+                            <select class="sel" id="sel2" style="width: 72px;">
+                                <option style="background-color: #252525; color: #fff;" value="AM" class="option">AM
+                                </option>
+                                <option style="background-color: #252525; color: #fff;" value="PM" class="option">PM
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="create" id="create">Create</button>
+            </div>
+        </div>
+    </div>
+    <div class="dapap1" id="dapap1">
+        <div class="upalamMassage">
+            <div class="hid" id="hid2"></div>
+            <div class="alamMassage">
+                <div class="rbtM">
+                    <h2 id="nameAl">ALarm</h2>
+                    <img src="alarmClock.gif" alt="">
+                </div>
+                <div class="upTime">
+                    <p>The alarm that is currently alerting</p>
+                    <div class="sl">
+                        <p class="se" id="se">00</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="canvas.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
+</body>
+
+</html>

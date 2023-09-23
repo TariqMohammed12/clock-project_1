@@ -1,0 +1,479 @@
+@font-face {
+  font-family: DS-DIGIT;
+  src: url("fonts/ds_digital/DS-DIGIT.TTF");
+}
+@font-face {
+  font-family: TitilliumWeb-Regular;
+  src: url("fonts/Titillium_Web/TitilliumWeb-Regular.ttf");
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: TitilliumWeb-Regular;
+  color: #fff;
+  list-style: none;
+}
+
+body {
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+canvas {
+  position: absolute;
+}
+.upmain {
+  padding: 1px;
+  background-color: #fff;
+  position: relative;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #212121;
+  flex-direction: column;
+  position: relative;
+}
+
+.hid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #121212;
+  top: 0px;
+  left: 0;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00ff74 !important;
+}
+.time div {
+  margin: 0 10px;
+  padding: 14px;
+  font-size: 121px;
+  font-family: "DS-DIGIT";
+  color: #00ff74 !important;
+}
+.time div span {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #838383;
+}
+#ampm {
+  font-family: "DS-DIGIT";
+  font-size: 78px;
+  padding: 10px 23px;
+}
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #252525;
+  width: 792px;
+}
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #252525;
+  flex-direction: column;
+  width: 100%;
+}
+.rbt {
+  width: 100%;
+  background-color: #454545;
+}
+.rbt h3 {
+  padding: 12px;
+  font-weight: 200;
+}
+.rbt1 {
+  width: 100%;
+  padding: 15px;
+  position: relative;
+}
+.rbt1 p {
+  padding: 11px 0px 11px;
+  font-weight: 200;
+  font-size: 14px;
+}
+.set {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 13px;
+  overflow-y: auto;
+  max-height: 296px;
+}
+.upin {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 114px;
+}
+.upin label {
+  font-size: 18px;
+}
+
+.sel {
+  background: transparent;
+  border: 1px solid #fff;
+  outline: none;
+  margin: 0 0 0 7px;
+  width: 54px;
+  height: 33px;
+  font-size: 23px;
+  cursor: pointer;
+  font-family: "DS-DIGIT";
+}
+.option {
+  background-color: transparent;
+  font-family: inherit;
+}
+.option:hover {
+  background-color: red; /* Set a custom background color */
+  color: white; /* Set a custom text color */
+}
+.plu {
+  width: 100%;
+  margin: 111px 0 0 0;
+}
+.pluse {
+  background-color: #494949;
+  padding: 19px;
+  font-size: 30px;
+  border-radius: 147px;
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+  bottom: 15px;
+}
+.pluse:hover {
+  background-color: #3b3a3a;
+}
+.dapap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000000;
+  transition: 0.1s;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.8);
+  z-index: 6;
+}
+.upMessage {
+  position: relative;
+  padding: 1px;
+  background: #fff;
+}
+.hi {
+  background-color: #252525;
+}
+.message {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #2d2d2d;
+  align-items: center;
+  justify-content: center;
+}
+.message h2 {
+  letter-spacing: 2px;
+  padding: 20px 156px 39px 22px;
+}
+.alam {
+  padding: 18px 26px;
+  display: flex;
+  background: #212121;
+}
+.upNume {
+  align-self: flex-start;
+  width: calc(100% - 22px);
+  padding-left: 22px;
+}
+.lableName {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0 22px 0;
+  font-size: 20px;
+}
+.upNume input {
+  background: transparent;
+  border: 1px solid #fff;
+  width: 100%;
+  height: 40px;
+  outline: none;
+  font-size: 21px;
+  padding: 0 0 0 8px;
+  font-weight: 200;
+}
+.create {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 4px 18px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 21px;
+  transition: 0.2s;
+}
+.edit {
+  width: 100%;
+}
+.create:hover {
+  background-color: #fff;
+  color: #212121;
+}
+.lab {
+  padding: 0 0 12px 0;
+  margin-top: 18px;
+}
+hr {
+  width: 100%;
+  margin: 9px 0;
+}
+.hr1 {
+  transform: rotate(25deg);
+  width: 27px;
+  position: absolute;
+  right: -2px;
+  top: 182px;
+}
+.hr2 {
+  transform: rotate(-25deg);
+  width: 27px;
+  position: absolute;
+  left: -2px;
+  top: 182px;
+}
+.fa-circle-xmark {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 26px;
+  cursor: pointer;
+}
+.slid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 9px 0;
+  font-size: 21px;
+  cursor: pointer;
+  padding-left: 9px;
+  border: 1px solid #fff;
+}
+.sec1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+.sec1 p {
+  padding: 11px 0;
+  font-weight: 200;
+  font-size: 17px;
+  margin: 0 0 0 24px;
+}
+.sec2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 345px;
+}
+.fa-circle {
+  font-size: 12px;
+}
+.sec2 p {
+  font-family: "DS-DIGIT";
+  font-size: 25px;
+}
+.sli {
+  justify-content: center;
+}
+.setting {
+  background: transparent;
+  padding: 2px;
+  height: 100%;
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 11px;
+  border: none;
+}
+.upSet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.upSet1 {
+  width: 90px;
+  background: #1a1a1a;
+  position: absolute;
+  visibility: hidden;
+  right: 46px;
+  opacity: 0;
+  transition: 0.1s;
+  font-size: 15px;
+  padding: 0px 3px 5px;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.upSet1 li {
+  width: 100%;
+  background: #292929;
+  padding: 2px 4px;
+  margin: 5px 0 0 0;
+}
+.upSet1 li:hover {
+  background-color: #373737;
+}
+.sec {
+  cursor: pointer;
+  z-index: 1;
+}
+.upp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.upp input {
+  margin: 0 43px 0 0;
+}
+
+.sheck {
+  appearance: none;
+  width: 57px;
+  height: 24px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 51px;
+  position: relative;
+  cursor: pointer;
+
+  right: 4px;
+  transition: 0.2s;
+}
+
+.sheck::after {
+  content: "";
+  height: 21px;
+  width: 21px;
+  background-color: #252525;
+  position: absolute;
+  top: 50%;
+  border-radius: 25px;
+  transform: translate(0, -50%);
+  box-shadow: -4px 0px 1px rgb(0 0 0 / 40%);
+  left: 2px;
+  transition: 0.2s;
+}
+
+.sheck:checked {
+  background-color: #00ff74;
+}
+
+.sheck:checked::after {
+  background-color: #252525;
+  right: 0px;
+  left: 59%;
+}
+.dapap1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000000;
+  transition: 0.1s;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.8);
+  z-index: 6;
+}
+.upTime {
+  background: #474747;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+.upTime p {
+  font-size: 17px;
+  padding: 5px 79px 15px 0;
+}
+.upalamMassage {
+  position: relative;
+  padding: 1px;
+  background: #fff;
+}
+
+.alamMassage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #2d2d2d;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding: 17px;
+}
+.rbtM {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 100%;
+}
+.rbtM h2 {
+  padding: 26px 0;
+}
+.rbtM img {
+  border-radius: 9px;
+}
+.sl {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  background: #2f2f2f;
+}
+.sl p {
+  padding: 10px 22px;
+  font-size: 28px;
+  color: #00ceff;
+  font-family: "DS-DIGIT";
+}
+.clear {
+  background: transparent;
+  padding: 3px 19px;
+  border: 1px solid #fff;
+  font-size: 20px;
+  position: absolute;
+  left: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+  bottom: 15px;
+}
+.clear:hover {
+  background-color: #fff;
+  color: #252525;
+}
